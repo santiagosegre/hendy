@@ -231,6 +231,38 @@ header {
     color: #aaa4a4;
 }
 
+.section-information {
+    background-color: #d9beab;
+    padding: 2rem 0 .5rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.section-information h3 {
+    text-transform: uppercase;
+}
+
+.section-information ul li {
+    padding: 0.3rem 0;
+}
+
+.section-information i {
+    color: #f5efeb;
+}
+
+.section-information a {
+    transition: all .3s;
+}
+
+.section-information a:hover {
+    color: #f5efeb;
+}
+
+.section-information-informa {
+    margin-bottom: 0;
+}
+
 /* Estilos do botão de WhatsApp */
 #whatsapp-button {
     font-size: 2rem;
@@ -256,7 +288,6 @@ footer {
     padding-top: .5rem;
     padding-bottom: .5rem;
     background: #bea08a;
-    margin-top: 1rem;
     width: 100%;
     box-shadow: 1px 1px 8px #61584fc4;
 }
@@ -291,5 +322,11 @@ footer {
 
     #banner {
         content: url('/assets/imgs/banner-rotativo-mobile-1.png');
+      }
+
+      .section-information {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 4rem;
       }
 }
