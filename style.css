@@ -269,7 +269,9 @@ footer {
         margin-bottom: 0;
     }
 
-
+    .section-categoria {
+        margin-top: 2rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -284,6 +286,10 @@ footer {
 
     #menu {
         margin-top: 10px;
+        gap: 1.2rem;
     }
 
+    #banner {
+        content: url('/assets/imgs/banner-rotativo-mobile-1.png');
+      }
 }
