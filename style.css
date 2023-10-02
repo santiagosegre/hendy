@@ -126,10 +126,12 @@ header {
     text-align: center;
     width: 15rem;
     box-shadow: 2px 2px 3px #8b6c4b8a;
+    border-radius: 15px;
 }
 
 .produto img {
     max-width: 100%;
+    border-radius: 15px 15px 0 0;
 }
 
 .produto-descricao {
@@ -237,6 +239,7 @@ header {
     display: flex;
     align-items: flex-start;
     justify-content: space-around;
+    box-shadow: 0px 0px 4px #a59e9e9e;
 }
 
 .section-information h3 {
