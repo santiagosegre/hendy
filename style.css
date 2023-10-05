@@ -114,6 +114,11 @@ header {
 
 .section-produtos {
     display: flex;
+
+}
+
+.page {
+    background: linear-gradient(180deg, #f5efeb 75%, #d3b09991);
 }
 
 .produtos {
@@ -241,6 +246,28 @@ header {
     border-radius: 25px;
 }
 
+.section-sobre-content {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+    max-width: 1100px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.section-sobre-content p {
+    text-align: justify;
+}
+
+.section-sobre-content img {
+    width: 600px; 
+    height: 339px;
+}
+
+.section-sobre-content:last-child p {
+    margin-bottom: 0;
+}
+
 /* REDES */
 
 .section-redes {
@@ -307,6 +334,80 @@ header {
 
 .section-information-informa {
     margin-bottom: 0;
+}
+
+.section-faq {
+    padding: 2rem 0;
+}
+
+details {
+	display: block;
+	max-width: 700px;
+	width: 100%;
+	margin: 10px auto;
+	padding: 5px;
+}
+
+summary {
+	display: block;
+	background: #d9beab;
+	color: #131312;
+	border-radius: 5px;
+	padding: 8px 15px;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+summary:after {
+	color: #f4f4f4;
+	float: left;
+	font-size: 1.5em;
+	font-weight: bold;
+	margin: -5px 5px 0 0;
+	padding: 0;
+	text-align: center;
+	width: 20px;
+}
+
+#linha p {
+	padding: 10px;
+}
+
+#linha[open] summary:after {
+	content: "-";
+	color: #131312;
+}
+
+.aviso-importante {
+	text-align: center;
+	max-width: 700px;
+	margin: 0 auto;
+    padding-top: 1rem;
+}
+
+.aviso-importante h3 {
+    text-transform: uppercase;
+}
+
+.aviso-importante:last-child p {
+    margin-bottom: 0;
+}
+
+.aviso-justificado {
+	text-align: justify;
+}
+
+.section-contato {
+    display: flex;
+    justify-content: center;
+}
+
+.section-contato-lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
 }
 
 /* Estilos do botão de WhatsApp */
@@ -377,7 +478,7 @@ footer {
 
     #menu {
         margin-top: 10px;
-        gap: 1.2rem;
+        gap: 1rem;
     }
 
     #banner {
@@ -390,4 +491,12 @@ footer {
         padding-left: 4rem;
     }
 
+    .section-sobre-content img {
+        width: 350px; 
+        height: auto;
+    }
+
+    .section-faq-form {
+        padding: 0 1.2rem;
+    }
 }
