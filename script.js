@@ -1,22 +1,24 @@
-// var slideIndex = 0;
-// showSlides();
+const imagensDesktop = [
+    "assets/imgs/banner-rotativo-1.png",
+    "assets/imgs/banner-rotativo-2.png"
+  ];
 
-// function plusSlides(n) {
-//     showSlides(slideIndex += n);
-// }
+  const imagensMobile = [
+    "assets/imgs/banner-rotativo-mobile-1.png",
+    "assets/imgs/banner-rotativo-mobile-2.png"
+  ];
 
-// function showSlides() {
-//     var i;
-//     var slides = document.getElementsByClassName("mySlides");
-//     if (slideIndex >= slides.length) {
-//         slideIndex = 0;
-//     }
-//     if (slideIndex < 0) {
-//         slideIndex = slides.length - 1;
-//     }
-//     for (i = 0; i < slides.length; i++) {
-//         slides[i].style.display = "none";
-//     }
-//     slides[slideIndex].style.display = "block";
-//     setTimeout(showSlides, 5000); // Troca de imagem a cada 5 segundos
-// }
+  const tempoIntervalo = 8000; // 8 segundos
+  let indiceAtual = 0;
+
+  function alterarImagem() {
+    if (window.innerWidth <= 768) {
+      document.getElementById("banner").src = imagensMobile[indiceAtual];
+    } else {
+      document.getElementById("banner").src = imagensDesktop[indiceAtual];
+    }
+
+    indiceAtual = (indiceAtual + 1) % imagensDesktop.length;
+  }
+
+  setInterval(alterarImagem, tempoIntervalo);

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 /* Estilos gerais */
 body {
     font-family: "Montserrat", sans-serif;
@@ -10,6 +12,8 @@ body {
       width: 0px; /* Torna a barra de rolagem invisível */
     }
   }
+
+
 
 main {
     display: block;
@@ -99,7 +103,7 @@ header {
 .section-categoria {
     text-align: center;
     font-size: .8rem;
-    font-weight: 100;
+    font-weight: 400;
 }
 
 .section-title {
@@ -409,6 +413,25 @@ summary:after {
     padding: 1rem;
 }
 
+.btn-info {
+    font-size: .5rem;
+    background-color: #8e857e;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: .3rem;
+    letter-spacing: 2px;
+    transition: all .4s;
+    box-shadow: 2px 2px 5px #646161b0;
+    margin-bottom: 1rem;
+}
+
+.btn-info:hover {
+    background: #686563;
+}
+
 /* Estilos do botão de WhatsApp */
 #whatsapp-button {
     font-size: 2rem;
@@ -481,7 +504,7 @@ footer {
     }
 
     #banner {
-        content: url('/assets/imgs/banner-rotativo-mobile-1.png');
+        background-image: url('assets/imgs/banner-rotativo-mobile-1.png');
     }
 
     .section-information {
